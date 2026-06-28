@@ -1,0 +1,11 @@
+{
+  "name": "aleia-cowork",
+  "version": "0.0.1",
+  "description": "Aleia Ferrari for Claude Cowork — productivity starter (install-validation stub).",
+  "author": {
+    "name": "Alejandro Ferrari",
+    "url": "https://github.com/alejandro-ferrari"
+  },
+  "repository": "https://github.com/alejandro-ferrari/aleia-ferrari",
+  "license": "MIT"
+}

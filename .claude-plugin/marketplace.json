@@ -1,0 +1,17 @@
+{
+  "name": "aleia-ferrari",
+  "owner": {
+    "name": "Alejandro Ferrari",
+    "email": "contacto@alejandroferrari.com"
+  },
+  "plugins": [
+    {
+      "name": "aleia-cowork",
+      "source": "./plugins/aleia-cowork",
+      "version": "0.0.1",
+      "description": "Aleia Ferrari for Claude Cowork — productivity starter (install-validation stub).",
+      "category": "productivity",
+      "keywords": ["productivity", "cowork", "aleia", "starter"]
+    }
+  ]
+}
