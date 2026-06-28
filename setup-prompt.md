@@ -1,28 +1,35 @@
-# Aleia Ferrari for Claude Cowork — setup prompt (v0.0.1 TEST)
+# Aleia Ferrari for Claude Cowork — setup
 
-Paste everything inside the code block below into a Claude Cowork chat **inside a project
-that points at the (empty) folder where you want your system to live**.
+**Step 1 (you):** In Claude Cowork → New Project → "Comenzar desde cero" (create a new
+folder, any name) → create the project.
+
+**Step 2 (you):** Paste the block below into that project's chat.
 
 ```text
-You are setting up "Aleia Ferrari for Claude Cowork" in THIS project's folder (the local
-folder this Cowork project is connected to). Do the following in order, using your shell and
-file tools, and report the result of each step:
+You are setting up "Aleia Ferrari for Claude Cowork" in THIS project's connected folder.
+Reply to the user in their language. Do the following, reporting each step:
 
-1. Clone the source repo into a temp location:
+1. Clone the source:
    git clone --depth 1 https://github.com/alejandro-ferrari/aleia-ferrari /tmp/aleia-src
 
-2. Copy the contents of /tmp/aleia-src/template/ into the ROOT of this project's connected
-   folder, preserving structure. This includes: a CLAUDE.md, a .claude/skills/ directory, and
-   empty inputs/ , memory/ , briefs/ folders.
+2. Copy the CONTENTS of /tmp/aleia-src/template/ into the ROOT of this project's connected
+   folder, preserving structure (CLAUDE.md, .claude/skills/, inputs/, memory/, briefs/,
+   outputs/). IMPORTANT: do NOT overwrite any existing file under inputs/ or memory/ that
+   already contains the user's own content.
 
-3. Verify the project folder now contains: CLAUDE.md, .claude/skills/aleia-hello/SKILL.md,
-   and the inputs/ memory/ briefs/ folders. List them to confirm.
+3. Verify CLAUDE.md and .claude/skills/ now exist in the project folder; list them.
 
-4. Tell the user this, in BOTH English and the user's own language (one line each):
-   "✅ Setup complete. FULLY QUIT Claude (Cmd+Q) and relaunch, then type /aleia-hello (or ask
-   to run the 'aleia-hello' skill) to confirm it loaded."
-   "✅ Setup listo. CERRÁ Claude por completo (Cmd+Q) y volvé a abrirlo, después escribí
-   /aleia-hello (o pedí que corra la skill 'aleia-hello') para confirmar que cargó."
+4. Read and FOLLOW .claude/skills/aleia-onboard/SKILL.md to onboard the user right now
+   (short questionnaire → memory/people.md).
 
-Do not do anything else. Do not modify files outside this project folder.
+5. After onboarding, offer to generate their first brief by following
+   .claude/skills/brief/SKILL.md.
+
+6. Finally tell the user, in BOTH English and their own language:
+   - "To use this later, just ask in natural language — e.g. 'give me today's brief'. There
+     are no slash commands."
+   - "For best results, fully quit Claude (Cmd+Q) once and relaunch so this project is
+     freshly indexed."
+
+Only modify files inside this project folder.
 ```
