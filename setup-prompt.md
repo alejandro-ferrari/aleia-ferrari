@@ -18,9 +18,11 @@ file tools, and report the result of each step:
 3. Verify the project folder now contains: CLAUDE.md, .claude/skills/aleia-hello/SKILL.md,
    and the inputs/ memory/ briefs/ folders. List them to confirm.
 
-4. Tell the user EXACTLY this:
-   "✅ Setup complete. Now please CLOSE and REOPEN this Cowork project so it loads the new
-   skills, then type /aleia-hello (or run the 'aleia-hello' skill) to confirm it loaded."
+4. Tell the user this, in BOTH English and the user's own language (one line each):
+   "✅ Setup complete. FULLY QUIT Claude (Cmd+Q) and relaunch, then type /aleia-hello (or ask
+   to run the 'aleia-hello' skill) to confirm it loaded."
+   "✅ Setup listo. CERRÁ Claude por completo (Cmd+Q) y volvé a abrirlo, después escribí
+   /aleia-hello (o pedí que corra la skill 'aleia-hello') para confirmar que cargó."
 
 Do not do anything else. Do not modify files outside this project folder.
 ```
