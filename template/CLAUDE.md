@@ -31,5 +31,7 @@ When the user asks for one of these, READ and FOLLOW the matching file:
 - onboarding / "set me up" / first run → `.claude/skills/aleia-onboard/SKILL.md`
 - daily brief / "today" / "what's on my plate" → `.claude/skills/brief/SKILL.md`
 - plan a project / "break this down" → `.claude/skills/plan/SKILL.md`
+- update / "actualizar" / get the latest version → `.claude/skills/update/SKILL.md`
+- doctor / health check / "is everything ok" → `.claude/skills/doctor/SKILL.md`
 
 The user invokes everything in natural language. You decide which skill fits and follow it.

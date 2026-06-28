@@ -8,7 +8,7 @@
     {
       "name": "aleia-cowork",
       "source": "./plugins/aleia-cowork",
-      "version": "0.0.1",
+      "version": "0.1.0",
       "description": "Aleia Ferrari for Claude Cowork — productivity starter (install-validation stub).",
       "category": "productivity",
       "keywords": ["productivity", "cowork", "aleia", "starter"]
